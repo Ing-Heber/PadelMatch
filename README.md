@@ -2,6 +2,15 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+## Development guidelines
+
+For commit, issue, and PR standards, see `DEV.md`.
+
+## AI collaboration
+
+- Repository instructions: `.github/copilot-instructions.md`
+- Context index: `docs/ai/README.md`
+
 ## Get started
 
 1. Install dependencies
