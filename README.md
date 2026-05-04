@@ -11,6 +11,12 @@ For commit, issue, and PR standards, see `DEV.md`.
 - Repository instructions: `.github/copilot-instructions.md`
 - Context index: `docs/ai/README.md`
 
+## UI foundations
+
+- `nativewind` is configured through `global.css`, `tailwind.config.js`, `babel.config.js`, and `metro.config.js`.
+- `date-fns` is available for shared date formatting utilities and is used in the starter smoke screen.
+- Storybook is isolated under `.rnstorybook/` and stays out of the default app flow unless explicitly enabled.
+
 ## Get started
 
 1. Install dependencies
@@ -24,6 +30,33 @@ For commit, issue, and PR standards, see `DEV.md`.
    ```bash
    npx expo start
    ```
+
+3. Start Storybook instead of the Expo Router app
+
+   ```bash
+   npm run storybook
+   ```
+
+   Optional platform-specific commands:
+
+   ```bash
+   npm run storybook:ios
+   npm run storybook:android
+   npm run storybook:web
+   ```
+
+## Storybook toggle behavior
+
+- The root entry is `index.ts`.
+- When `EXPO_PUBLIC_STORYBOOK_ENABLED=true`, `index.ts` registers `.rnstorybook/index.ts` as the app root.
+- When the variable is absent or not `true`, the normal Expo Router entry (`expo-router/entry`) is loaded.
+- In practice, that means Storybook renders immediately on startup when the toggle is on; there is no in-app route switch required for this setup.
+
+If you want to enable the toggle manually without the helper script, run:
+
+```bash
+EXPO_PUBLIC_STORYBOOK_ENABLED=true npx expo start --clear
+```
 
 In the output, you'll find options to open the app in a
 
