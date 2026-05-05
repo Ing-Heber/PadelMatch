@@ -76,3 +76,10 @@ A task is done when:
 
 AI can speed up drafting and implementation, but final responsibility is manual review for correctness, edge cases, and maintainability.
 
+## 6) Testing conventions
+
+- Use Jest + React Native Testing Library for unit and screen smoke tests.
+- Name tests `*.test.ts` or `*.test.tsx` and keep them close to the code they cover when practical.
+- Use `npm test` for single-run validation (local pre-PR and CI-style checks).
+- Use `npm run test:watch` during active development for faster feedback loops.
+

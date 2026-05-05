@@ -6,6 +6,14 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 For commit, issue, and PR standards, see `DEV.md`.
 
+## Testing
+
+- Baseline unit/smoke tests run with Jest + React Native Testing Library.
+
+```bash
+npm test
+```
+
 ## AI collaboration
 
 - Repository instructions: `.github/copilot-instructions.md`
