@@ -5,6 +5,7 @@ Use this folder as the starter context pack for AI-assisted development.
 ## Files
 - `context-project.md`: product and technical baseline.
 - `context-workflow.md`: delivery standards and review checklist.
+- `state-form-foundation-case.md`: starter notes for the `zustand` and `react-hook-form` foundation setup.
 
 ## How to keep this useful
 - Keep each file short and factual.

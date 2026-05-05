@@ -16,6 +16,7 @@ For commit, issue, and PR standards, see `DEV.md`.
 - `nativewind` is configured through `global.css`, `tailwind.config.js`, `babel.config.js`, and `metro.config.js`.
 - `date-fns` is available for shared date formatting utilities and is used in the starter smoke screen.
 - Storybook is isolated under `.rnstorybook/` and stays out of the default app flow unless explicitly enabled.
+- `zustand` and `react-hook-form` have a small smoke example in `.rnstorybook/stories/foundations.stories.tsx`.
 
 ## Get started
 
